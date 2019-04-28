@@ -3,9 +3,9 @@
 
 import pandas as pd
 # train Data
-trainData = pd.read_csv("https://raw.githubusercontent.com/Vasistareddy/sentiment_analysis/master/data/train.csv")
+trainData = pd.read_csv("https://raw.githubusercontent.com/SpencerSherk/NLP_final/master/datasets/train.csv")
 # test Data
-testData = pd.read_csv("https://raw.githubusercontent.com/Vasistareddy/sentiment_analysis/master/data/test.csv")
+testData = pd.read_csv("https://raw.githubusercontent.com/SpencerSherk/NLP_final/master/datasets/test.csv")
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 # Create feature vectors
