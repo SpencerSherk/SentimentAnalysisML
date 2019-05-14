@@ -23,7 +23,7 @@ TASK LIST:
 		- maybe external appliactions of our system (less important, during office hrs meyers said he prefers internally-focused projects, but could be easy to do) 
 
 	WRITING THE PAPER:
-		- why we chose to analyze emotion using our parameters (we used 9 sentiments: empty, sadness, worry, neutral, surprise, love, fun, hate, happiness)
+		- why we chose to analyze emotion using our parameters (we used 9 sentiments: empty, sadness, worry, neutral, surprise, love, fun, hate, happiness) - it's kind of a standard in NLP & related to many papers... will be easy
 		- model validation (compare to our manual results)
 		- how we implemented our model
 		- error analysis 
