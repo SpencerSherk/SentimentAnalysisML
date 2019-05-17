@@ -27,6 +27,6 @@ def findTweets(numFiles):
                 if n < numFiles and i < len(data["statuses"]) - 1:
                     FINAL_OUTPUT.write(',\n')
 
-        FINAL_OUTPUT.write('\n]')
+    FINAL_OUTPUT.write('\n]')
 
 findTweets(int(NUM_FILES))
