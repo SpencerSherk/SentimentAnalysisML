@@ -26,7 +26,8 @@ def findTweets(numFiles):
                 json.dump(tweets, FINAL_OUTPUT)
                 if n < numFiles and i < len(data["statuses"]) - 1:
                     FINAL_OUTPUT.write(',\n')
-
+        if n != numFiles -1:
+            FINAL_OUTPUT.write(',\n')
     FINAL_OUTPUT.write('\n]')
 
 findTweets(int(NUM_FILES))

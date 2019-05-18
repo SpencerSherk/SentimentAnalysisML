@@ -13,10 +13,16 @@ FINAL_OUTPUT = open(TERM + "_tweets.json", 'w')
 def findTweets(numFiles):
 
     for n in range(int(numFiles)):
-        INPUT_JSON = TERM + str(n) + '.txt'
+    	if TERM[0] == "#":
+    		INPUT_JSON = "hashtag_" + TERM[1:] + str(n) + '.txt'
+    	else:
+        	INPUT_JSON = TERM + str(n) + '.txt'
         OUTPUT_JSON = open(INPUT_JSON, 'w')
 
-        command = 'twurl "/1.1/search/tweets.json?q=' + TERM + '&count=' + COUNT + '&lang=en" | jq  > ' + INPUT_JSON
+        if TERM[0] == "#":
+        	command = 'twurl "/1.1/search/tweets.json?q=%23' + TERM[1:].rstrip() + '&count=' + COUNT + '&lang=en" | jq  > ' + INPUT_JSON	
+        else:
+      	    command = 'twurl "/1.1/search/tweets.json?q=' + TERM + '&result_type=recent&count=' + COUNT + '&lang=en" | jq  > ' + INPUT_JSON
 
         os.system(command)
         time.sleep(10)
