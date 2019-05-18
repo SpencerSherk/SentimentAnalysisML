@@ -7,7 +7,9 @@ final project for Natural Language Processing, NYU spring 2019, Professor Adam M
 Group Roles:
 
 Spencer Sherk - emotion_analysis.py
+
 Anthony - twitter scraper
+
 David - data management & analysis
 
 How to run the system:
