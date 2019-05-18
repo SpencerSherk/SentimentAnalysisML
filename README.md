@@ -3,31 +3,29 @@
 # NLP_final
 final project for Natural Language Processing, NYU spring 2019, Professor Adam Meyers
 
-TASK LIST:
 
-	IMPLEMENT EMOTIONAL ANALYSIS MODEL - finished (see main.py, using test.json as training/test data)
-		- trained using kaggle dataset (https://www.kaggle.com/c/sa-emotions/leaderboard)
-		- TODO: change model to allow for input without labels (won't be hard, will do when scraper is working)
-		- TODO: optimize model, at 33% accuracy right now (not bad for our 9-sentiment classification task, but might be able to improve)
+Group Roles:
 
-	IMPLEMENT DATA SCRAPER FOR TWITTER DATA CONTAINING GIVEN WORD
-		- generate json file with relevant tweets
+Spencer Sherk - emotion_analysis.py
+Anthony - twitter scraper
+David - data management & analysis
 
-	MANUAL DATASET ANNOTATION
-		- each of us have to manually annotate the same 100 phrase dataset, compare results, see what human accuracy of manual annotation is (record % agreement) compare to our system to see how it compares
+How to run the system:
 
-	IF WE HAVE TIME: (these are all just ideas)
-		- create deep learning model as well, or other types of models, compare results
-		- link prediction model with datascraper, so user can enter a given word and have the program output the percentage of tweets with each corresponding emotion
-		- for manual dataset analysis: score against adjudicated data, or kappa (see lecture notes)
-		- maybe external appliactions of our system (less important, during office hrs meyers said he prefers internally-focused projects, but could be easy to do)
+ - Run the twitter scraper (see below)
+ - run emotion_analysis.py <<test/training set>> <<twitter_data>>
 
-	WRITING THE PAPER:
-		- why we chose to analyze emotion using our parameters (we used 9 sentiments: empty, sadness, worry, neutral, surprise, love, fun, hate, happiness) - it's kind of a standard in NLP & related to many papers... will be easy
-		- model validation (compare to our manual results)
-		- how we implemented our model
-		- error analysis
-		- cite papers
+ example run: 
+
+	# fills 4 different text files each with 100 tweets containing "trump" the target word
+ > ./findTweets.py trump 100 4 		
+
+ 	# converts 4 text files into one json file called "trump.json"
+ > python3 findTerms.py trump 4     
+
+ 	# run our system using training & test set from "test.json", perform analysis on "trump.json"
+ > python3 emotion_analysis.py test.json trump.json 		
+
 
 
 
@@ -40,3 +38,4 @@ How to run Tweet scraper:
 - Running scraper:
 	- ./findTweets.py <<term>> <<number of times to search for tweets>>
 	- python3 findTerms.py <<term>> <<number of times tweets were searched>>
+
