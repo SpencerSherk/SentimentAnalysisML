@@ -1,12 +1,12 @@
 
 
-# NLP_final
-final project for Natural Language Processing, NYU spring 2019, Professor Adam Meyers
+# NLP
+Natural Language Processing, NYU spring 2019, Advised by Professor Adam Meyers
 
 
 Group Roles:
 
-Spencer Sherk - emotion_analysis.py
+Spencer Sherk - Machine Learning Models
 
 Anthony - twitter scraper
 
