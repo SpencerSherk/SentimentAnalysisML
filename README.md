@@ -1,6 +1,6 @@
 
 
-# NLP
+# Descriprtion
 Natural Language Processing, NYU spring 2019, Advised by Professor Adam Meyers
 
 
