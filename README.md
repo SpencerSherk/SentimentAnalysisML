@@ -12,8 +12,8 @@ Anthony - twitter scraper
 
 David - data management & analysis
 
-Read the paper here : " The Task of MultiTarget Sentiment Analysis "
-[NLP_report.pdf](https://github.com/SpencerSherk/SentimentAnalysisML/files/6962207/NLP_report.pdf)
+Read the paper here : 
+[The Task of MultiTarget Sentiment Analysis.pdf](https://github.com/SpencerSherk/SentimentAnalysisML/files/6962207/NLP_report.pdf)
 
 ![header](https://user-images.githubusercontent.com/39233109/128880179-1fed3a72-7a70-43f6-91a3-c576cf84c5cf.png)
 ![p3](https://user-images.githubusercontent.com/39233109/128880197-9957318d-14c9-4cfe-b4fc-9383ce319c45.png)
