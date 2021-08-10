@@ -12,7 +12,19 @@ Anthony - twitter scraper
 
 David - data management & analysis
 
-How to run the system:
+Abstract & Report:
+[NLP_report.pdf](https://github.com/SpencerSherk/SentimentAnalysisML/files/6962207/NLP_report.pdf)
+
+![header](https://user-images.githubusercontent.com/39233109/128880179-1fed3a72-7a70-43f6-91a3-c576cf84c5cf.png)
+![p3](https://user-images.githubusercontent.com/39233109/128880197-9957318d-14c9-4cfe-b4fc-9383ce319c45.png)
+![p4](https://user-images.githubusercontent.com/39233109/128880201-7a067102-72bd-47aa-ab38-826bf8884bb8.png)
+![p5](https://user-images.githubusercontent.com/39233109/128880208-fe5ef35a-c72c-42e9-aa6c-0d63a361b99a.png)
+![p6](https://user-images.githubusercontent.com/39233109/128880219-acb58af8-8e79-4075-a1c7-1b35b5adb8ed.png)
+
+
+
+
+# How to run the system:
 
  - Run the twitter scraper (see below)
  - run emotion_analysis.py <<test/training set>> <<twitter_data>>
